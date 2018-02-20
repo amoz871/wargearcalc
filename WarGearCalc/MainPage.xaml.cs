@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -22,9 +23,14 @@ namespace WarGearCalc
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
+        private ObservableCollection<string> factionsSelection = new ObservableCollection<String>();
+
         public MainPage()
         {
             this.InitializeComponent();
+            factionsSelection.Add("Order");
+            factionsSelection.Add("Destruction");
         }
 
         private async void Test_Button_Click(object sender, RoutedEventArgs e)
@@ -34,6 +40,11 @@ namespace WarGearCalc
             Windows.Media.SpeechSynthesis.SpeechSynthesisStream stream = await synth.SynthesizeTextToStreamAsync("War Gear Calculator");
             mediaElement.SetSource(stream, stream.ContentType);
             mediaElement.Play();
+        }
+
+        private void Faction_ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
         }
     }
 }

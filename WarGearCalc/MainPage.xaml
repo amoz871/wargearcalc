@@ -8,6 +8,9 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button Content="Test" HorizontalAlignment="Left" Height="146" Margin="816,447,0,0" VerticalAlignment="Top" Width="167" Click="Test_Button_Click"/>
+        <Button Content="Test" HorizontalAlignment="Left" Height="146" Margin="384,155,0,0" VerticalAlignment="Top" Width="167" 
+                Click="Test_Button_Click"/>
+        <ComboBox HorizontalAlignment="Left" Margin="170,150,0,0" VerticalAlignment="Top" 
+                  SelectionChanged="Faction_ComboBox_SelectionChanged" ItemsSource="{x:Bind factions}"/>
     </Grid>
 </Page>
