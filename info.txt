@@ -1,0 +1,45 @@
+Name
+Slot
+Type
+SetId
+Source
+
+Ballistic Skill
+Initiative
+Intelligence
+Strength
+Toughness
+Weapon Skill
+Willpower
+Wounds
+
+Armor
+Corporeal Resist
+Elemental Resist
+Spirit Resist
+
+Armor Pen Reduce
+Block
+Crit Reduce
+Disrupt
+Dodge
+Parry
+
+AutoAttack Speed
+Heal Power
+Magic Power
+Melee Power
+Ranged Power
+
+Heal Crit
+Magic Crit
+Melee Crit
+Range Crit
+
+Block Strikethrough
+Parry Strikethrough
+Disrupt Strikethrough
+
+AP Regen
+HP Regen
+Morale Regen
