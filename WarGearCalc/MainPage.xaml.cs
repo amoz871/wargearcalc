@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -25,6 +26,7 @@ namespace WarGearCalc
     {
 
         private ObservableCollection<string> careerSelection = new ObservableCollection<String>();
+        private Character character;
 
         public MainPage()
         {
@@ -64,7 +66,10 @@ namespace WarGearCalc
 
         private void Faction_ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+            ComboBox cmb = (ComboBox)sender;
+            String selectedValue = (String)cmb.SelectedValue;
+            Debug.WriteLine("Selected career: " + selectedValue);
+            character = new Character(selectedValue);
         }
     }
 }
