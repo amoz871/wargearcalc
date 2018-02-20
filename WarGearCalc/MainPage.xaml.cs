@@ -24,13 +24,33 @@ namespace WarGearCalc
     public sealed partial class MainPage : Page
     {
 
-        private ObservableCollection<string> factionsSelection = new ObservableCollection<String>();
+        private ObservableCollection<string> careerSelection = new ObservableCollection<String>();
 
         public MainPage()
         {
             this.InitializeComponent();
-            factionsSelection.Add("Order");
-            factionsSelection.Add("Destruction");
+            careerSelection.Add("Archmage");
+            careerSelection.Add("Black Guard");
+            careerSelection.Add("Black Orc");
+            careerSelection.Add("Bright Wizard");
+            careerSelection.Add("Choppa");
+            careerSelection.Add("Disciple of Khaine");
+            careerSelection.Add("Engineer");
+            careerSelection.Add("Ironbreaker");
+            careerSelection.Add("Knight of the Blazing Sun");
+            careerSelection.Add("Magus");
+            careerSelection.Add("Marauder");
+            careerSelection.Add("Runepriest");
+            careerSelection.Add("Shadow Warrior");
+            careerSelection.Add("Shaman");
+            careerSelection.Add("Sorcerer");
+            careerSelection.Add("Squig Herder");
+            careerSelection.Add("Sword Master");
+            careerSelection.Add("Warrior Priest");
+            careerSelection.Add("White Lion");
+            careerSelection.Add("Witch Elf");
+            careerSelection.Add("Witch Hunter");
+            careerSelection.Add("Zealot");
         }
 
         private async void Test_Button_Click(object sender, RoutedEventArgs e)
