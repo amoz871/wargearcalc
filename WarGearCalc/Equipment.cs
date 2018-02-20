@@ -8,5 +8,6 @@ namespace WarGearCalc
 {
     class Equipment
     {
+
     }
 }
